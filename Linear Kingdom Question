@@ -1,0 +1,11 @@
+n = int(input())
+l = 0
+tracker = 0
+min_capacity = 0
+for z in range(n):
+   x1 = input()
+   l = x1.split()
+   tracker = tracker + (int(l[1]) - int(l[0]))
+   if tracker > min_capacity:
+       min_capacity = tracker
+print(min_capacity)
