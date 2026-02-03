@@ -1,0 +1,15 @@
+n = int(input())
+
+laptops = []
+for _ in range(n):
+    x, y = map(int, input().split())
+    laptops.append((x, y))
+
+laptops.sort()
+
+for i in range(n - 1):
+    if laptops[i][1] > laptops[i + 1][1]:
+        print("Happy Alex")
+        break
+else:
+    print("Poor Alex")
